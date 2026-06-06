@@ -1,4 +1,4 @@
-![Cinematic Emotion Lab Hero](assets/hero-banner.png)
+<p align="center"><img src="assets/hero-banner.png" alt="Cinematic Emotion Lab Hero"/></p>
 
 # Cinematic Emotion Lab
 
@@ -26,7 +26,7 @@ These are not rhetorical questions. They are experimental hypotheses, each mappe
 
 ## Research Components
 
-![Cinematic Emotion Intelligence Pipeline](assets/cinematic-emotion-pipeline.png)
+<p align="center"><img src="assets/cinematic-emotion-pipeline.png" alt="Cinematic Emotion Intelligence Pipeline"/></p>
 
 | Component | Domain | Status |
 |-----------|--------|--------|
@@ -49,7 +49,7 @@ For full technical documentation: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ## System Architecture
 
-![Research Architecture](assets/research-architecture.png)
+<p align="center"><img src="assets/research-architecture.png" alt="Research Architecture"/></p>
 
 The system architecture is designed around a single principle: **each layer must be independently interrogable.** The pipeline operates across four abstraction layers:
 
@@ -69,7 +69,7 @@ The system architecture is designed around a single principle: **each layer must
 
 ## Emotion Mapping Framework
 
-![Emotion Heatmap · Cinematic Analysis](assets/emotion-heatmap.png)
+<p align="center"><img src="assets/emotion-heatmap.png" alt="Emotion Heatmap - Cinematic Analysis"/></p>
 
 The emotion mapping framework treats cinematic emotion as a structured, multi-dimensional space. Each audio clip is annotated along five axes:
 
@@ -87,7 +87,7 @@ The temporal heatmap surfaces how emotional content evolves *through* a cue - a 
 
 ## Signal Analysis Layer
 
-![Spectrogram Intelligence · Film Score Signal Analysis](assets/spectrogram-intelligence.png)
+<p align="center"><img src="assets/spectrogram-intelligence.png" alt="Spectrogram Intelligence - Film Score Signal Analysis"/></p>
 
 The signal analysis layer extracts a 71-dimensional acoustic feature vector per clip across seven domains:
 
