@@ -233,11 +233,49 @@ Film Composer · AI Architect · Computational Musicology Researcher
 
 ---
 
+## Research Preview Notice
+
+This repository documents an active, publication-track research program operating under a staged public disclosure framework. The following notices govern how this repository and its contents should be understood and used.
+
+**This is not a final publication.** The research is substantially complete at the experimental level. Findings, trained models, and the full annotated corpus are withheld pending peer-reviewed publication. What is public is methodology, infrastructure, partial data, and qualitative framing — not conclusions.
+
+**Results are embargoed.** Quantitative results from EXP-002, EXP-003, and EXP-004 are withheld pending peer review. Qualitative characterizations of results are released on the schedule documented in [ROADMAP.md](ROADMAP.md). Do not represent embargoed findings as publicly known.
+
+**Staged release schedule.** Each public release surfaces one deliberate layer of the research. The release sequence, rationale, and forthcoming milestones are documented in [ROADMAP.md](ROADMAP.md) and [STAGED_RELEASE_STRATEGY.md](STAGED_RELEASE_STRATEGY.md).
+
+---
+
+## Citation Notice
+
+If you use this repository — its methodology, feature extraction pipeline, annotation schema, public corpus subset, or any written research documentation — in academic or professional work, please cite it.
+
+A machine-readable citation is available in [CITATION.cff](CITATION.cff). Formatted citations (APA, BibTeX, MLA, Chicago) are provided in [docs/citation-and-use-policy.md](docs/citation-and-use-policy.md).
+
+**Short-form attribution:**
+> Cinematic Emotion Lab - Bernard G. (2026) · https://github.com/bernardvgosh/cinematic-emotion-lab
+
+When the formal publication associated with this research is released, please update your citation to reference the peer-reviewed paper. A repository notice will be committed at that time.
+
+---
+
+## Intellectual Property and Disclosure Notice
+
+This research program is pending intellectual property review. The research methodology, compositional intent annotation framework, and the Composer Gap study design documented here represent original contributions by the author. No patent applications are claimed as of the current release.
+
+The cinematic audio cues forming the research corpus are original compositions and are not licensed for use outside this research program without explicit written permission.
+
+For the complete IP and data policy: [docs/ip-and-disclosure-notice.md](docs/ip-and-disclosure-notice.md)
+For citation and acceptable use terms: [docs/citation-and-use-policy.md](docs/citation-and-use-policy.md)
+
+---
+
 ## License & Data Policy
 
-**Code:** MIT License - see [LICENSE](LICENSE)
+**Code:** MIT License · [LICENSE](LICENSE)
 
-**Data:** Audio files are not committed to this repository. Feature matrices and anonymized metadata release with v0.2. Full annotated dataset releases with v1.0 timed to publication.
+**Research documentation, schemas, and visual assets:** CC BY-NC 4.0 · [LICENSE](LICENSE)
+
+**Data:** Audio files are not committed to this repository. The public acoustic feature subset is available at `datasets/processed/`. Full annotated dataset releases with v1.0, timed to publication. See [docs/ip-and-disclosure-notice.md](docs/ip-and-disclosure-notice.md) for complete data policy.
 
 **Findings:** Quantitative results from EXP-002, EXP-003, and EXP-004 are embargoed pending peer review.
 

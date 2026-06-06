@@ -1,0 +1,93 @@
+cff-version: 1.2.0
+message: >
+  If you use this repository, its methodology, annotation schema, feature
+  extraction pipeline, or any written research documentation in academic or
+  professional work, please cite it using the metadata below.
+  See docs/citation-and-use-policy.md for full citation guidance,
+  acceptable use conditions, and attribution requirements.
+
+type: software
+
+title: "Cinematic Emotion Lab"
+
+abstract: >
+  An interdisciplinary AI research program developing computational systems for
+  cinematic emotion recognition, harmonic tension modeling, and the formal
+  characterization of composer-machine interpretive divergence in film music.
+  The research operates at the intersection of music information retrieval,
+  affective computing, computational musicology, and interpretive theory.
+  Ground truth is established through compositional intent annotation rather
+  than listener perception, producing a methodologically distinctive corpus
+  and a novel experimental framework for studying the gap between machine
+  acoustic perception and compositional intent (the Composer Gap).
+
+authors:
+  - family-names: "G."
+    given-names: "Bernard"
+    email: contactbernardg@gmail.com
+    orcid: ""
+    affiliation: "Cinematic Emotion Lab"
+
+repository-code: "https://github.com/bernardvgosh/cinematic-emotion-lab"
+
+url: "https://github.com/bernardvgosh/cinematic-emotion-lab"
+
+version: "0.2.0"
+
+date-released: "2026-08-01"
+
+license:
+  - MIT
+  - CC-BY-NC-4.0
+
+license-url: "https://github.com/bernardvgosh/cinematic-emotion-lab/blob/main/LICENSE"
+
+keywords:
+  - music information retrieval
+  - affective computing
+  - computational musicology
+  - film music
+  - cinematic emotion recognition
+  - harmonic tension modeling
+  - annotation methodology
+  - composer gap
+  - machine learning
+  - audio signal processing
+  - librosa
+  - interdisciplinary AI research
+
+references:
+  - type: software
+    title: "NB-EXP-001: Cinematic Feature Extraction Pipeline"
+    authors:
+      - family-names: "G."
+        given-names: "Bernard"
+    version: "1.0"
+    date-released: "2026-06-06"
+    repository-code: "https://github.com/bernardvgosh/cinematic-emotion-lab"
+    notes: "Feature extraction notebook — 71-dimensional acoustic feature space"
+
+  - type: data
+    title: "Cinematic Emotion Annotation Schema v1.0"
+    authors:
+      - family-names: "G."
+        given-names: "Bernard"
+    version: "1.0.0"
+    date-released: "2026-08-01"
+    repository-code: "https://github.com/bernardvgosh/cinematic-emotion-lab"
+    notes: "Formal annotation schema for composer-intent emotional ground truth"
+
+preferred-citation:
+  type: software
+  title: "Cinematic Emotion Lab"
+  authors:
+    - family-names: "G."
+      given-names: "Bernard"
+  year: 2026
+  url: "https://github.com/bernardvgosh/cinematic-emotion-lab"
+  notes: >
+    A formal academic paper describing the full research methodology and findings
+    is in preparation. Until that paper is published, please cite this repository
+    using the metadata above. When the paper is released, update your citation
+    to reference the peer-reviewed publication. This file will be updated at
+    that time with the preferred academic citation.

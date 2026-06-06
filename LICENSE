@@ -1,6 +1,23 @@
-MIT License
-
+CINEMATIC EMOTION LAB — DUAL LICENSE
 Copyright (c) 2026 Bernard G.
+
+This repository contains two categories of material governed by separate licenses.
+Read this file carefully before using, adapting, or redistributing any content.
+
+===============================================================================
+LICENSE A — MIT LICENSE
+Applies to: Software and Code
+===============================================================================
+
+The following categories of material are licensed under the MIT License:
+
+  - All Python source files (*.py)
+  - All Jupyter notebooks (*.ipynb)
+  - All shell scripts (*.sh)
+  - Configuration files (*.yaml, *.json, *.toml, *.cfg, requirements.txt)
+  - Data processing scripts and utility scripts
+
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +36,81 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+===============================================================================
+LICENSE B — CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL 4.0 INTERNATIONAL
+             (CC BY-NC 4.0)
+Applies to: Research Documents, Schemas, Visual Assets, and Written Content
+===============================================================================
+
+The following categories of material are licensed under CC BY-NC 4.0:
+
+  - All written documentation (*.md files in docs/, research-logs/, release_notes/)
+  - Annotation schemas and data specifications (datasets/annotations/schema.json)
+  - Visual identity assets (assets/*.png)
+  - Research diagrams and infographics (visualizations/)
+  - Research methodology documents and previews
+  - Research philosophy, roadmap, and positioning documents
+  - Repository-level documentation (README.md, ROADMAP.md, RESEARCH_STRATEGY.md,
+    STAGED_RELEASE_STRATEGY.md, and related files)
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made. Credit must name "Bernard G., Cinematic Emotion
+  Lab" and link to https://github.com/bernardvgosh/cinematic-emotion-lab
+
+  NonCommercial — You may not use the material for commercial purposes.
+
+  No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license permits.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+===============================================================================
+ADDITIONAL NOTICES
+===============================================================================
+
+RESEARCH DATA AND FINDINGS
+
+The annotated research corpus, trained model weights, and quantitative experimental
+findings associated with this research program are not released under either license
+above. They are withheld from public release pending peer-reviewed publication and
+are subject to separate terms that will accompany the data release. See
+docs/ip-and-disclosure-notice.md for the full data policy.
+
+AUDIO CONTENT
+
+No raw audio files are committed to this repository. The cinematic audio cues
+that form the research corpus are original compositions by Bernard G. and are
+not licensed for any use without explicit written permission.
+
+INTELLECTUAL PROPERTY
+
+This repository documents a research program that is pending intellectual property
+review. The research methodology, annotation framework, and the Composer Gap study
+design described in this repository represent original research contributions. Use
+of the conceptual framework, annotation methodology, or study design for derivative
+research or commercial applications requires attribution and, in commercial contexts,
+prior written permission from the author.
+
+See docs/ip-and-disclosure-notice.md for the complete IP and disclosure notice.
+
+CITATION
+
+If you use this repository, its methodology, schemas, or research documentation in
+academic or professional work, please cite it. A machine-readable citation is
+available in CITATION.cff. Human-readable guidance is in docs/citation-and-use-policy.md.
+
+===============================================================================
+
+Bernard G.
+Cinematic Emotion Lab
+https://github.com/bernardvgosh/cinematic-emotion-lab
+contactbernardg@gmail.com
+2026
