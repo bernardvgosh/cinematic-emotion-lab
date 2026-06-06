@@ -7,9 +7,9 @@
 
 ## Foundational Premise
 
-The methodology of this lab rests on a single contestable premise: **emotional states in cinematic music are not subjective responses — they are structured acoustic events.** If a film composer can reliably produce grief, tension, or triumph through deliberate musical construction, then those emotional categories must leave measurable traces in the audio signal.
+The methodology of this lab rests on a single contestable premise: **emotional states in cinematic music are not subjective responses - they are structured acoustic events.** If a film composer can reliably produce grief, tension, or triumph through deliberate musical construction, then those emotional categories must leave measurable traces in the audio signal.
 
-This premise is falsifiable. Testing its limits — and characterizing where it breaks down — is as important as confirming it where it holds.
+This premise is falsifiable. Testing its limits - and characterizing where it breaks down - is as important as confirming it where it holds.
 
 ---
 
@@ -48,9 +48,9 @@ Source audio is acquired under research licensing terms. All clips are verified 
 
 ```python
 # Standardization parameters
-SAMPLE_RATE = 22050   # Hz  — standard MIR convention
+SAMPLE_RATE = 22050   # Hz  - standard MIR convention
 N_FFT       = 2048    # FFT window size
-HOP_LENGTH  = 512     # Frame hop — ~23ms at 22050Hz
+HOP_LENGTH  = 512     # Frame hop - ~23ms at 22050Hz
 DURATION    = None    # Full clip loaded
 MONO        = True    # All clips converted to mono
 ```
@@ -64,19 +64,19 @@ Processing steps:
 ### Feature Extraction Domains
 
 **Timbral (MFCCs)**
-Mel-frequency cepstral coefficients capture the timbral character of the audio — the spectral envelope that distinguishes string textures from brass, woodwinds from choir. 13 coefficients extracted per frame; summarized as mean and standard deviation across the clip.
+Mel-frequency cepstral coefficients capture the timbral character of the audio - the spectral envelope that distinguishes string textures from brass, woodwinds from choir. 13 coefficients extracted per frame; summarized as mean and standard deviation across the clip.
 
 **Harmonic (Chroma CQT)**
 Constant-Q chroma features map energy onto the 12 pitch classes of Western tonality. Used to characterize key, mode, harmonic density, and tonal center stability. The dominant pitch class and overall chroma entropy are derived quantities.
 
 **Spectral (Centroid · Bandwidth · Rolloff)**
-Spectral centroid measures the "brightness" of the spectrum — the frequency-weighted center of mass. Higher centroid values correlate with perceived sharpness and tension. Bandwidth measures spectral spread; rolloff captures the frequency below which 85% of energy is concentrated.
+Spectral centroid measures the "brightness" of the spectrum - the frequency-weighted center of mass. Higher centroid values correlate with perceived sharpness and tension. Bandwidth measures spectral spread; rolloff captures the frequency below which 85% of energy is concentrated.
 
 **Dynamic (RMS Energy)**
 Root mean square energy tracks loudness and dynamic range over time. The ratio of maximum to mean RMS encodes dramatic dynamic shape. Peak-normalized dynamic range in dB is computed as a single-value descriptor.
 
 **Textural (Zero Crossing Rate)**
-Zero crossing rate captures the rate at which the signal crosses zero amplitude — a proxy for noisiness, transient density, and percussive content. Higher ZCR correlates with timbral complexity and rhythmic activity.
+Zero crossing rate captures the rate at which the signal crosses zero amplitude - a proxy for noisiness, transient density, and percussive content. Higher ZCR correlates with timbral complexity and rhythmic activity.
 
 **Rhythmic (Tempo · Beat Frames)**
 Tempo estimated via librosa's beat tracker. Beat frame positions stored for temporal alignment with annotation events.
@@ -121,7 +121,7 @@ Composer annotations capture the intended emotional character of each clip along
 
 ### Annotation Protocol
 
-Annotations are provided by the primary researcher in the role of film composer — drawing on professional scoring experience rather than naive listener response. This is a deliberate methodological choice: the ground truth is **compositional intent**, not audience perception.
+Annotations are provided by the primary researcher in the role of film composer - drawing on professional scoring experience rather than naive listener response. This is a deliberate methodological choice: the ground truth is **compositional intent**, not audience perception.
 
 The distinction matters. A scene scored for dread may be perceived as suspense by some listeners. The annotation records what was *constructed*, not what was *received*. The gap between these is a secondary research problem addressed in EXP-004.
 
@@ -148,16 +148,16 @@ Secondary tasks:
 ### Model Hierarchy
 
 ```
-Tier 1 — Classical Baselines
+Tier 1 - Classical Baselines
   SVM (RBF kernel)
   Random Forest
   Gradient Boosting (XGBoost)
 
-Tier 2 — Deep Learning
+Tier 2 - Deep Learning
   1D CNN on raw feature sequences
   LSTM on frame-level features
 
-Tier 3 — Transformer
+Tier 3 - Transformer
   Attention-based sequence model
   Pretrained audio model fine-tuning (evaluation pending)
 ```
@@ -193,13 +193,13 @@ Methodology:
 
 ## Methodological Commitments
 
-**Against premature reduction** — Dimensionality reduction is applied downstream of, not during, feature engineering. The full 71-dimensional feature space is preserved for interpretive analysis before PCA or UMAP is applied.
+**Against premature reduction** - Dimensionality reduction is applied downstream of, not during, feature engineering. The full 71-dimensional feature space is preserved for interpretive analysis before PCA or UMAP is applied.
 
-**Against naive ground truth** — Audience perception surveys are not used as primary annotation ground truth. Compositional intent is the target variable; audience perception is a secondary measurement.
+**Against naive ground truth** - Audience perception surveys are not used as primary annotation ground truth. Compositional intent is the target variable; audience perception is a secondary measurement.
 
-**Against single-metric evaluation** — No single accuracy number will be reported as the headline result. The shape of model performance — which classes it gets right, which it confuses, and why — is the finding.
+**Against single-metric evaluation** - No single accuracy number will be reported as the headline result. The shape of model performance - which classes it gets right, which it confuses, and why - is the finding.
 
-**For transparency about limits** — Every model result will include a discussion of what the feature representation cannot capture: performance nuance, orchestration space, temporal resolution, cultural encoding.
+**For transparency about limits** - Every model result will include a discussion of what the feature representation cannot capture: performance nuance, orchestration space, temporal resolution, cultural encoding.
 
 ---
 

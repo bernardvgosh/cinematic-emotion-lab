@@ -18,18 +18,18 @@ Or use a dedicated `gh-pages` branch for a fully custom site.
 ### Recommended Page Hierarchy
 
 ```
-/ (index)              — Lab overview, mission, current status
-/research              — Research questions, methodology summary
-/experiments           — EXP index with status indicators
-/visualizations        — Gallery of published visualizations
-/team                  — Author bio + collaborators
-/publications          — Papers, preprints, citations
-/updates               — Research log / changelog feed
+/ (index)              - Lab overview, mission, current status
+/research              - Research questions, methodology summary
+/experiments           - EXP index with status indicators
+/visualizations        - Gallery of published visualizations
+/team                  - Author bio + collaborators
+/publications          - Papers, preprints, citations
+/updates               - Research log / changelog feed
 ```
 
 ### Jekyll Theme Recommendation
 
-Use a minimal dark theme — no pre-built academic themes. Custom CSS matching the lab's Noir Intelligence visual system. Key CSS variables:
+Use a minimal dark theme - no pre-built academic themes. Custom CSS matching the lab's Noir Intelligence visual system. Key CSS variables:
 
 ```css
 :root {
@@ -67,7 +67,7 @@ Update the `Phase` badge with each release:
 
 ## Iconography Suggestions
 
-Use Unicode and simple SVG glyphs in docs and README tables — no emoji, no icon libraries. Suggested symbols for the lab's visual language:
+Use Unicode and simple SVG glyphs in docs and README tables - no emoji, no icon libraries. Suggested symbols for the lab's visual language:
 
 | Symbol | Use |
 |--------|-----|
@@ -92,7 +92,7 @@ GitHub's contribution graph is a public credibility signal. The following minimu
 
 **Weekly (every week without exception):**
 - Commit a new `WEEK-XX_YYYY-MM-DD_research-log.md`
-- Even if the content is brief — one observation, one blocked question, one result that didn't work
+- Even if the content is brief - one observation, one blocked question, one result that didn't work
 
 **Bi-weekly:**
 - A new or updated visualization in `visualizations/plots/`
@@ -101,7 +101,7 @@ GitHub's contribution graph is a public credibility signal. The following minimu
 **Monthly:**
 - Update README status bars
 - Add a new entry to `UPCOMING_RELEASES.md`
-- A notebook update — even a minor cell refinement
+- A notebook update - even a minor cell refinement
 
 **Quarterly:**
 - Stage release (per `RESEARCH_STRATEGY.md`)
@@ -126,17 +126,17 @@ Never: `update readme`, `fix stuff`, `minor changes`, `wip`
 
 ## Research Log Strategy
 
-Weekly logs are a public signal of research activity and intellectual honesty. They should feel like field notes from a serious research practice — not polished reports, but not casual either.
+Weekly logs are a public signal of research activity and intellectual honesty. They should feel like field notes from a serious research practice - not polished reports, but not casual either.
 
 ### Log Structure
 
 Each log follows `RESEARCH_LOG_TEMPLATE.md` with these priorities:
 
-1. **What was observed** — factual, specific, no interpretation yet
-2. **What was unexpected** — this is gold; note it immediately
-3. **What blocked progress** — intellectual honesty is a credibility signal
+1. **What was observed** - factual, specific, no interpretation yet
+2. **What was unexpected** - this is gold; note it immediately
+3. **What blocked progress** - intellectual honesty is a credibility signal
 4. **What changed in the model** (methodology, not code)
-5. **Composer intuition notes** — observations that resist formalization
+5. **Composer intuition notes** - observations that resist formalization
 
 ### Public-Safe Log Language
 
@@ -160,7 +160,7 @@ Observations that can be published without disclosing findings:
 - Feature extraction signal chain (full flowchart, component-level)
 
 ### Q3 2026
-- Temporal emotion arc diagram (abstract, no real data — illustrative)
+- Temporal emotion arc diagram (abstract, no real data - illustrative)
 - Composer annotation workflow diagram
 - Acoustic feature correlation concept map
 

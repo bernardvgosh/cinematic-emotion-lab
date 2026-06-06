@@ -1,4 +1,4 @@
-# Research Log — Week [XX] · [YYYY-MM-DD]
+# Research Log - Week [XX] · [YYYY-MM-DD]
 
 **Lab:** Cinematic Emotion Lab
 **Researcher:** Bernard G.
@@ -53,7 +53,7 @@
 
 ## 5. Blockers & Open Questions
 
-- **Blocker:** Description — *Proposed resolution:*
+- **Blocker:** Description - *Proposed resolution:*
 - **Open Question:** What does X mean in the context of Y?
 
 ---
@@ -62,7 +62,7 @@
 
 | Paper / Resource | Relevance | Notes |
 |------------------|-----------|-------|
-| Author (Year) — Title | | |
+| Author (Year) - Title | | |
 
 ---
 

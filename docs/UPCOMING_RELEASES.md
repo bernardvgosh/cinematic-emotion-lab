@@ -1,7 +1,7 @@
 # Upcoming Releases
 ## Cinematic Emotion Lab · Public Disclosure Schedule
 
-> Releases are staged by research readiness, not by calendar pressure. Each release represents a coherent, self-contained contribution — not a partial dump of in-progress work.
+> Releases are staged by research readiness, not by calendar pressure. Each release represents a coherent, self-contained contribution - not a partial dump of in-progress work.
 
 ---
 
@@ -14,9 +14,9 @@
 **Includes:**
 - Complete repository scaffold with naming conventions and documentation standards
 - Visual identity system: banner, color palette, pipeline diagram, LinkedIn card
-- `NB-EXP-001` — full feature extraction notebook (librosa pipeline, 71-feature matrix, cinematic visualizations)
+- `NB-EXP-001` - full feature extraction notebook (librosa pipeline, 71-feature matrix, cinematic visualizations)
 - `METHODOLOGY.md`, `ARCHITECTURE.md`, `RESEARCH_QUESTIONS.md`
-- `RESEARCH_STRATEGY.md` — staged disclosure framework
+- `RESEARCH_STRATEGY.md` - staged disclosure framework
 - `COMPOSER_VS_AI.md`, `RESEARCH_PHILOSOPHY.md`
 
 **Research signal:** The pipeline is built. The methodology is serious. The research has begun.
@@ -32,8 +32,8 @@
 **Will include:**
 - Anonymized sample feature matrix (30–50 clips)
 - Annotation schema with field definitions and rationale
-- `NB-EDA-001_feature-distributions.ipynb` — statistical overview of feature space
-- `NB-VIZ-001_spectrogram-gallery.ipynb` — comparative spectrogram visualization
+- `NB-EDA-001_feature-distributions.ipynb` - statistical overview of feature space
+- `NB-VIZ-001_spectrogram-gallery.ipynb` - comparative spectrogram visualization
 - Week 01–06 research logs
 - Updated README status indicators
 
@@ -51,10 +51,10 @@
 **Status:** Pending EXP-002 completion
 
 **Will include:**
-- `NB-EXP-002_emotion-classification-baseline.ipynb` (partial — key accuracy cells redacted)
+- `NB-EXP-002_emotion-classification-baseline.ipynb` (partial - key accuracy cells redacted)
 - Qualitative results description: "Initial classification experiments demonstrate statistically significant separability across emotion categories in the acoustic feature space"
-- Feature importance analysis (which features matter most — without revealing the full results)
-- `NB-VIZ-002_chroma-radar-profiles.ipynb` — interactive chroma visualization
+- Feature importance analysis (which features matter most - without revealing the full results)
+- `NB-VIZ-002_chroma-radar-profiles.ipynb` - interactive chroma visualization
 - UMAP feature space projection (cluster structure visible, labels withheld)
 
 **Research signal:** The research is working. Classification is possible. The interesting questions are now about *where* it works and *where* it doesn't.
@@ -109,13 +109,13 @@
 
 ## Release Principles
 
-**Quality over calendar** — No release ships before it is ready to represent the research accurately.
+**Quality over calendar** - No release ships before it is ready to represent the research accurately.
 
-**Methodology before results** — Architecture and methodology documents precede data and results in every release. Readers should understand *how* before they see *what*.
+**Methodology before results** - Architecture and methodology documents precede data and results in every release. Readers should understand *how* before they see *what*.
 
-**Teasers are not leaks** — Every partial disclosure is deliberate. Nothing is published accidentally. The staged nature of the disclosure is itself a methodological choice.
+**Teasers are not leaks** - Every partial disclosure is deliberate. Nothing is published accidentally. The staged nature of the disclosure is itself a methodological choice.
 
-**Results travel with context** — No number is released without the methodological context required to interpret it correctly.
+**Results travel with context** - No number is released without the methodological context required to interpret it correctly.
 
 ---
 

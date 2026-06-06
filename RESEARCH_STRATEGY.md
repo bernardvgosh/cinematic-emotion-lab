@@ -1,7 +1,7 @@
 # Research Exposure Strategy
 ## Cinematic Emotion Lab · Staged Public Disclosure Plan
 
-> This document is the internal strategic framework governing what is released, when, and why. It is committed publicly as a signal of methodological intentionality — the act of planning disclosure is itself a research practice.
+> This document is the internal strategic framework governing what is released, when, and why. It is committed publicly as a signal of methodological intentionality - the act of planning disclosure is itself a research practice.
 
 ---
 
@@ -9,7 +9,7 @@
 
 **Release architecture, not findings. Release methodology, not conclusions. Release questions, not answers.**
 
-The goal is to establish intellectual presence, signal depth, and generate professional curiosity — without surrendering the competitive advantage of unpublished results. Every public release should make the unreleased material feel more valuable, not less necessary.
+The goal is to establish intellectual presence, signal depth, and generate professional curiosity - without surrendering the competitive advantage of unpublished results. Every public release should make the unreleased material feel more valuable, not less necessary.
 
 ---
 
@@ -37,7 +37,7 @@ The goal is to establish intellectual presence, signal depth, and generate profe
 **Release:**
 - Anonymized sample feature matrix (20–30 clips, labels redacted)
 - Annotation schema with field definitions
-- EDA notebook (NB-EDA-001) showing feature distributions — no emotion-labeled conclusions
+- EDA notebook (NB-EDA-001) showing feature distributions - no emotion-labeled conclusions
 - Waveform + spectrogram visualizations for selected clips
 - Week 01–04 research logs (factual, no findings disclosed)
 - Preliminary tempo–arousal scatter (described as "pattern observed, validation ongoing")
@@ -89,16 +89,16 @@ The goal is to establish intellectual presence, signal depth, and generate profe
 
 Priority order for maximum immediate impact:
 
-1. `README.md` — primary impression surface
-2. `visualizations/assets/CEL_banner_github.png` — visual credibility
-3. `visualizations/assets/CEL_pipeline_diagram.png` — technical sophistication signal
-4. `docs/METHODOLOGY.md` — depth signal
-5. `docs/RESEARCH_QUESTIONS.md` — intellectual curiosity signal
-6. `notebooks/experiments/NB-EXP-001_*.ipynb` — technical proof of work
-7. `docs/ARCHITECTURE.md` — systems thinking signal
-8. `docs/COMPOSER_VS_AI.md` — originality and intrigue signal
-9. `RESEARCH_STRATEGY.md` (this file) — meta-credibility signal
-10. `research-notes/weekly-logs/WEEK-01_*.md` — activity signal
+1. `README.md` - primary impression surface
+2. `visualizations/assets/CEL_banner_github.png` - visual credibility
+3. `visualizations/assets/CEL_pipeline_diagram.png` - technical sophistication signal
+4. `docs/METHODOLOGY.md` - depth signal
+5. `docs/RESEARCH_QUESTIONS.md` - intellectual curiosity signal
+6. `notebooks/experiments/NB-EXP-001_*.ipynb` - technical proof of work
+7. `docs/ARCHITECTURE.md` - systems thinking signal
+8. `docs/COMPOSER_VS_AI.md` - originality and intrigue signal
+9. `RESEARCH_STRATEGY.md` (this file) - meta-credibility signal
+10. `research-notes/weekly-logs/WEEK-01_*.md` - activity signal
 
 ---
 
@@ -107,8 +107,8 @@ Priority order for maximum immediate impact:
 Do not upload until Stage 3 or 4:
 
 - Any file containing classification accuracy numbers
-- `datasets/annotations/` — holds composer labels
-- `models/checkpoints/` — trained weights
+- `datasets/annotations/` - holds composer labels
+- `models/checkpoints/` - trained weights
 - `models/results/` with populated metrics
 - Any notebook with filled "Results & Observations" sections
 - Research logs mentioning specific finding magnitudes
@@ -174,7 +174,7 @@ Do not upload until Stage 3 or 4:
 
 ## Suggested Teaser Notebooks
 
-These notebooks are safe to publish — they show methodology and code quality without exposing findings:
+These notebooks are safe to publish - they show methodology and code quality without exposing findings:
 
 | Notebook | Content | Status |
 |----------|---------|--------|
@@ -226,7 +226,7 @@ Use these formulations to communicate progress without disclosing findings:
 
 > "Tempo analysis across the current dataset reveals a distribution that does not conform to simple linear arousal models. A more nuanced model is under development."
 
-> "The Composer Gap — the divergence between annotated intent and acoustic prediction — is measurable and structured. The characterization of this gap is the current central research focus."
+> "The Composer Gap - the divergence between annotated intent and acoustic prediction - is measurable and structured. The characterization of this gap is the current central research focus."
 
 ---
 

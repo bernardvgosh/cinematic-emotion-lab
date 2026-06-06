@@ -10,14 +10,14 @@ This repository documents an active, ongoing research program. Findings are rele
 
 ## What This Research Explores
 
-Film music is a precision emotional engineering system. A composer writing for picture does not approximate emotion — they construct it, at specific timecodes, against specific visual events. This research asks: can that construction be computationally modeled?
+Film music is a precision emotional engineering system. A composer writing for picture does not approximate emotion - they construct it, at specific timecodes, against specific visual events. This research asks: can that construction be computationally modeled?
 
 The lab investigates five interconnected questions:
 
 - What acoustic features reliably encode intended cinematic emotion?
 - Can harmonic tension be predicted as a temporal sequence, not just a static label?
 - Where does the machine's perception systematically diverge from the composer's intent?
-- Does narrative position — rising, climax, falling, resolution — leave measurable traces in the audio signal?
+- Does narrative position - rising, climax, falling, resolution - leave measurable traces in the audio signal?
 - Is there a learnable grammar underlying the emotional architecture of film scoring?
 
 These are not rhetorical questions. They are experimental hypotheses, each mapped to a numbered experiment in the research pipeline.
@@ -41,7 +41,7 @@ These are not rhetorical questions. They are experimental hypotheses, each mappe
 | Tempo–Arousal Correlation Study | Affective Computing | Data Collection |
 | Composer vs. AI Divergence Study | Interpretive Analysis | Embargoed |
 
-The pipeline consists of **7 distinct stages** designed to process audio inputs, apply multi-domain feature extraction, integrate composer annotations, and produce evaluated ML outputs. Each stage is independently operable — components can be upgraded or replaced without cascading failure through the system.
+The pipeline consists of **7 distinct stages** designed to process audio inputs, apply multi-domain feature extraction, integrate composer annotations, and produce evaluated ML outputs. Each stage is independently operable - components can be upgraded or replaced without cascading failure through the system.
 
 For full technical documentation: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
@@ -53,13 +53,13 @@ For full technical documentation: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 The system architecture is designed around a single principle: **each layer must be independently interrogable.** The pipeline operates across four abstraction layers:
 
-**Layer 1 — Signal** · Raw audio ingestion, format normalization, mono conversion, sample rate standardization. All clips processed to 22050Hz, float32.
+**Layer 1 - Signal** · Raw audio ingestion, format normalization, mono conversion, sample rate standardization. All clips processed to 22050Hz, float32.
 
-**Layer 2 — Features** · Multi-domain acoustic feature extraction. 71 dimensions per clip across 7 feature groups. Designed to be over-complete at this stage; dimensionality reduction applied downstream.
+**Layer 2 - Features** · Multi-domain acoustic feature extraction. 71 dimensions per clip across 7 feature groups. Designed to be over-complete at this stage; dimensionality reduction applied downstream.
 
-**Layer 3 — Annotation** · Composer-led emotional labeling integrated as supervised targets. Schema captures primary/secondary emotion, intensity (1–5), narrative position, harmonic mode, and orchestration density.
+**Layer 3 - Annotation** · Composer-led emotional labeling integrated as supervised targets. Schema captures primary/secondary emotion, intensity (1–5), narrative position, harmonic mode, and orchestration density.
 
-**Layer 4 — Modeling** · Classical ML baselines → deep sequence models → transformer architectures. Each model evaluated against composer annotations as ground truth.
+**Layer 4 - Modeling** · Classical ML baselines → deep sequence models → transformer architectures. Each model evaluated against composer annotations as ground truth.
 
 > *"85% of audience engagement in films is driven by emotional resonance."*
 
@@ -73,15 +73,15 @@ The system architecture is designed around a single principle: **each layer must
 
 The emotion mapping framework treats cinematic emotion as a structured, multi-dimensional space. Each audio clip is annotated along five axes:
 
-- **Primary emotion** — `tension · triumph · grief · suspense · joy · dread · longing · ambiguity`
-- **Emotional intensity** — 1 (minimal) to 5 (maximal)
-- **Narrative position** — `opening · rising · climax · falling · resolution`
-- **Harmonic mode** — `major · minor · modal · atonal`
-- **Orchestration density** — 1 (sparse) to 5 (dense)
+- **Primary emotion** - `tension · triumph · grief · suspense · joy · dread · longing · ambiguity`
+- **Emotional intensity** - 1 (minimal) to 5 (maximal)
+- **Narrative position** - `opening · rising · climax · falling · resolution`
+- **Harmonic mode** - `major · minor · modal · atonal`
+- **Orchestration density** - 1 (sparse) to 5 (dense)
 
-Annotations are provided by the primary researcher in the role of film composer — capturing compositional *intent*, not audience *perception*. This distinction is methodologically deliberate and fully documented in [docs/methodology-preview.md](docs/methodology-preview.md).
+Annotations are provided by the primary researcher in the role of film composer - capturing compositional *intent*, not audience *perception*. This distinction is methodologically deliberate and fully documented in [docs/methodology-preview.md](docs/methodology-preview.md).
 
-The temporal heatmap surfaces how emotional content evolves *through* a cue — a dimension that static clip-level analysis cannot reveal.
+The temporal heatmap surfaces how emotional content evolves *through* a cue - a dimension that static clip-level analysis cannot reveal.
 
 ---
 
@@ -109,15 +109,15 @@ The signal analysis layer extracts a 71-dimensional acoustic feature vector per 
 ## Composer vs. AI Interpretation
 
 > *"The machine hears amplitude, frequency, and time. The composer hears grief."*
-> — Research axiom, Cinematic Emotion Lab
+> - Research axiom, Cinematic Emotion Lab
 
-One of the most consequential threads in this research is the **Composer Gap** — the structured, measurable divergence between what an acoustic model predicts and what a film composer says they constructed.
+One of the most consequential threads in this research is the **Composer Gap** - the structured, measurable divergence between what an acoustic model predicts and what a film composer says they constructed.
 
 Early annotation work has begun to surface the shape of this gap. Working hypotheses under active investigation:
 
 - The model collapses emotional ambiguity onto high-confidence categorical neighbors
 - Dynamic intensity is conflated with emotional weight
-- Cues built around negative space — deliberate silence, withheld resolution — are systematically underscored
+- Cues built around negative space - deliberate silence, withheld resolution - are systematically underscored
 - The model performs well when tempo and mode co-occur in expected directions, and fails when composers deliberately disrupt that expectation
 
 Quantitative results are embargoed pending publication.
@@ -130,8 +130,8 @@ Quantitative results are embargoed pending publication.
 
 | Asset | Description |
 |-------|-------------|
-| [NB-EXP-001](notebooks/experiments/) | Full feature extraction pipeline notebook — 71-feature matrix, cinematic visualizations |
-| [docs/methodology-preview.md](docs/methodology-preview.md) | Research methodology overview — signal analysis through interpretive study |
+| [NB-EXP-001](notebooks/experiments/) | Full feature extraction pipeline notebook - 71-feature matrix, cinematic visualizations |
+| [docs/methodology-preview.md](docs/methodology-preview.md) | Research methodology overview - signal analysis through interpretive study |
 | [docs/research-components.md](docs/research-components.md) | Component inventory with status and domain mapping |
 | [docs/composer-ai-interpretation.md](docs/composer-ai-interpretation.md) | Composer Gap study design and theoretical framing |
 | [research-logs/001-research-positioning.md](research-logs/001-research-positioning.md) | Research positioning and foundational framing |
@@ -209,18 +209,18 @@ cinematic-emotion-lab/
 
 ## How to Follow the Research
 
-**Watch this repository** — releases are staged and announced through commits.
+**Watch this repository** - releases are staged and announced through commits.
 
 **Read in this order:**
-1. [docs/RESEARCH_PHILOSOPHY.md](docs/RESEARCH_PHILOSOPHY.md) — what this research believes and why
-2. [docs/RESEARCH_QUESTIONS.md](docs/RESEARCH_QUESTIONS.md) — what is being tested
-3. [docs/methodology-preview.md](docs/methodology-preview.md) — how it is being tested
-4. [notebooks/experiments/NB-EXP-001](notebooks/experiments/) — the first experiment
-5. [docs/composer-ai-interpretation.md](docs/composer-ai-interpretation.md) — the central theoretical problem
+1. [docs/RESEARCH_PHILOSOPHY.md](docs/RESEARCH_PHILOSOPHY.md) - what this research believes and why
+2. [docs/RESEARCH_QUESTIONS.md](docs/RESEARCH_QUESTIONS.md) - what is being tested
+3. [docs/methodology-preview.md](docs/methodology-preview.md) - how it is being tested
+4. [notebooks/experiments/NB-EXP-001](notebooks/experiments/) - the first experiment
+5. [docs/composer-ai-interpretation.md](docs/composer-ai-interpretation.md) - the central theoretical problem
 
-**Research logs** are committed regularly to [research-logs/](research-logs/) — field notes from an active research practice.
+**Research logs** are committed regularly to [research-logs/](research-logs/) - field notes from an active research practice.
 
-**Inquiries and collaboration** — open a GitHub Issue labeled `inquiry`.
+**Inquiries and collaboration** - open a GitHub Issue labeled `inquiry`.
 
 ---
 
@@ -229,13 +229,13 @@ cinematic-emotion-lab/
 **Bernard G.**
 Film Composer · AI Architect · Computational Musicology Researcher
 
-*Professional background spanning film scoring, software engineering, data science, and architectural design — brought to bear on a single research problem: what does cinematic music do to the human mind, and can that be computed?*
+*Professional background spanning film scoring, software engineering, data science, and architectural design - brought to bear on a single research problem: what does cinematic music do to the human mind, and can that be computed?*
 
 ---
 
 ## License & Data Policy
 
-**Code:** MIT License — see [LICENSE](LICENSE)
+**Code:** MIT License - see [LICENSE](LICENSE)
 
 **Data:** Audio files are not committed to this repository. Feature matrices and anonymized metadata release with v0.2. Full annotated dataset releases with v1.0 timed to publication.
 

@@ -7,9 +7,9 @@
 
 ## Foundational Premise
 
-The methodology rests on a single contestable premise: **emotional states in cinematic music are not subjective responses — they are structured acoustic events.** If a composer can reliably produce grief, tension, or triumph through deliberate musical construction, those emotional categories must leave measurable traces in the audio signal.
+The methodology rests on a single contestable premise: **emotional states in cinematic music are not subjective responses - they are structured acoustic events.** If a composer can reliably produce grief, tension, or triumph through deliberate musical construction, those emotional categories must leave measurable traces in the audio signal.
 
-Testing this premise — and characterizing precisely where it breaks down — is as important as confirming it where it holds.
+Testing this premise - and characterizing precisely where it breaks down - is as important as confirming it where it holds.
 
 ---
 
@@ -19,13 +19,13 @@ Testing this premise — and characterizing precisely where it breaks down — i
 Multi-domain acoustic feature extraction from raw cinematic audio clips. 71-dimensional feature vector per clip. Full extraction pipeline documented in `notebooks/experiments/NB-EXP-001`.
 
 ### Phase 2 · Semantic Annotation
-Composer-led emotional labeling using a structured schema. Ground truth is compositional *intent*, not listener *perception* — a deliberate methodological choice with full theoretical justification.
+Composer-led emotional labeling using a structured schema. Ground truth is compositional *intent*, not listener *perception* - a deliberate methodological choice with full theoretical justification.
 
 ### Phase 3 · Supervised Learning
 Classification and regression models trained on the annotated feature matrix. Classical baselines established before deep learning approaches are applied.
 
 ### Phase 4 · Interpretive Analysis
-Systematic comparison of model predictions against composer annotations. The Composer Gap — the structured divergence between computational perception and compositional intent — is the primary research output.
+Systematic comparison of model predictions against composer annotations. The Composer Gap - the structured divergence between computational perception and compositional intent - is the primary research output.
 
 ---
 

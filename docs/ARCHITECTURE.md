@@ -5,7 +5,7 @@
 
 ## Design Philosophy
 
-The architecture of this system is built around a single principle: **each layer must be independently interrogable.** Any component — the feature extractor, the annotation schema, the classifier — should be replaceable without cascading failure through the pipeline. This modularity is not engineering convenience; it is a research requirement. As our understanding of cinematic emotion deepens, the system must be able to evolve.
+The architecture of this system is built around a single principle: **each layer must be independently interrogable.** Any component - the feature extractor, the annotation schema, the classifier - should be replaceable without cascading failure through the pipeline. This modularity is not engineering convenience; it is a research requirement. As our understanding of cinematic emotion deepens, the system must be able to evolve.
 
 ---
 
@@ -101,7 +101,7 @@ The architecture of this system is built around a single principle: **each layer
 
 **Accepted formats:** `.wav` · `.mp3` · `.flac` · `.aif` · `.aiff`
 **Target spec:** 22050Hz · mono · float32 · minimum 10 seconds
-**Storage:** Not committed to repository — managed externally. Feature matrices and metadata only.
+**Storage:** Not committed to repository - managed externally. Feature matrices and metadata only.
 
 ---
 

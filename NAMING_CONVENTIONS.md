@@ -1,4 +1,4 @@
-# Naming Conventions — Cinematic Emotion Lab
+# Naming Conventions - Cinematic Emotion Lab
 
 Consistent naming across all assets enables reproducibility, searchability, and long-term scalability. Follow these conventions strictly.
 
@@ -63,9 +63,9 @@ INC001_metadata.json
 NB-[XXX]_[topic-slug]_[YYYY-MM-DD].ipynb
 ```
 
-- `NB-XXX` — zero-padded three-digit sequence number
-- `topic-slug` — lowercase, hyphen-separated description
-- `YYYY-MM-DD` — creation date
+- `NB-XXX` - zero-padded three-digit sequence number
+- `topic-slug` - lowercase, hyphen-separated description
+- `YYYY-MM-DD` - creation date
 
 **Examples:**
 ```

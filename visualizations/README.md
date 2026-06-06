@@ -32,7 +32,7 @@ FIG-[XX]_[description]_[YYYY-MM-DD].[ext]   ← publication exports
 
 ## Visualization Stack
 
-- `matplotlib` + `seaborn` — static research figures
-- `plotly` — interactive charts (saved as `.html`)
-- `librosa.display` — spectrograms and audio plots
-- `umap-learn` — feature space topology projections
+- `matplotlib` + `seaborn` - static research figures
+- `plotly` - interactive charts (saved as `.html`)
+- `librosa.display` - spectrograms and audio plots
+- `umap-learn` - feature space topology projections

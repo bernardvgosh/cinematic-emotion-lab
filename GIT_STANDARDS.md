@@ -1,4 +1,4 @@
-# Git Standards — Cinematic Emotion Lab
+# Git Standards - Cinematic Emotion Lab
 
 Clear, consistent git history is part of reproducible research. Every commit should tell a story.
 
@@ -115,9 +115,9 @@ main              ← stable, publication-ready state
 Use semantic tags for research milestones:
 
 ```
-v0.1.0 — initial dataset and annotation schema
-v0.2.0 — first baseline ML results
-v1.0.0 — first complete experiment suite (conference-ready)
+v0.1.0 - initial dataset and annotation schema
+v0.2.0 - first baseline ML results
+v1.0.0 - first complete experiment suite (conference-ready)
 ```
 
 ---
@@ -132,4 +132,4 @@ v1.0.0 — first complete experiment suite (conference-ready)
 
 ---
 
-*Cinematic Emotion Lab — Every commit is a research decision.*
+*Cinematic Emotion Lab - Every commit is a research decision.*

@@ -81,7 +81,7 @@ This is an open research lab. Contributors may include:
 
 ## Pull Request Guidelines
 
-- Keep PRs focused — one contribution per PR
+- Keep PRs focused - one contribution per PR
 - Reference any related Issues
 - Include a brief description of what was added and why
 - Maintainer review is required before merging
@@ -103,4 +103,4 @@ Open a GitHub Issue with the label `question` or reach out via the repository co
 
 ---
 
-*Cinematic Emotion Lab — Collaborative research at the intersection of art and intelligence.*
+*Cinematic Emotion Lab - Collaborative research at the intersection of art and intelligence.*

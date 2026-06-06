@@ -1,7 +1,7 @@
 # Research Questions
 ## Cinematic Emotion Lab · Theoretical Framework
 
-> *Good research questions are not answered — they are dissolved. You stop asking them not because you found the answer, but because you found a better question.*
+> *Good research questions are not answered - they are dissolved. You stop asking them not because you found the answer, but because you found a better question.*
 
 ---
 
@@ -15,11 +15,11 @@ These questions define the core empirical program of the lab. Each maps to one o
 
 **Question:** Do low-level acoustic features contain sufficient information to reliably classify the intended emotional category of cinematic music clips?
 
-**Why it matters:** This is the foundational question. If acoustic features carry no reliable emotional signal, the entire computational approach fails. If they do — with what reliability, and for which emotional categories?
+**Why it matters:** This is the foundational question. If acoustic features carry no reliable emotional signal, the entire computational approach fails. If they do - with what reliability, and for which emotional categories?
 
 **Experimental mapping:** EXP-001 (feature extraction) → EXP-002 (classification)
 
-**Theoretical background:** Decades of music psychology research suggest consistent acoustic correlates of broad emotional dimensions (Valence-Arousal space). This research asks whether those correlates hold at the specific resolution of cinematic emotion categories — a finer and more contextually situated taxonomy than standard music psychology models address.
+**Theoretical background:** Decades of music psychology research suggest consistent acoustic correlates of broad emotional dimensions (Valence-Arousal space). This research asks whether those correlates hold at the specific resolution of cinematic emotion categories - a finer and more contextually situated taxonomy than standard music psychology models address.
 
 **Status:** Feature extraction complete. Classification results withheld pending annotation completion.
 
@@ -27,13 +27,13 @@ These questions define the core empirical program of the lab. Each maps to one o
 
 ### RQ-02 · The Tension Trajectory Problem
 
-**Question:** Is harmonic tension in film music a learnable, predictable quantity — or is it irreducibly compositional?
+**Question:** Is harmonic tension in film music a learnable, predictable quantity - or is it irreducibly compositional?
 
 **Why it matters:** Harmonic tension is arguably the most important structural mechanism in film scoring. A composer's ability to build, sustain, and release tension is the technical foundation of emotional manipulation in cinema. If it is learnable from acoustic features, we gain a powerful analytical tool. If it is not, we learn something profound about the limits of computational music analysis.
 
 **Experimental mapping:** EXP-003 (sequence modeling)
 
-**Key methodological challenge:** Tension is inherently temporal and relational — it depends on what came before and what is anticipated. Static clip-level features may be insufficient; sequential models over frame-level features are required. The research tests whether temporal context encoding changes the classification picture.
+**Key methodological challenge:** Tension is inherently temporal and relational - it depends on what came before and what is anticipated. Static clip-level features may be insufficient; sequential models over frame-level features are required. The research tests whether temporal context encoding changes the classification picture.
 
 **Status:** Architecture design phase. Results embargoed.
 
@@ -43,7 +43,7 @@ These questions define the core empirical program of the lab. Each maps to one o
 
 **Question:** Where is the systematic boundary between what a machine can perceive from audio and what a film composer says they constructed?
 
-**Why it matters:** This is the most intellectually consequential question in the research program. The gap between computational perception and compositional intent is not a failure condition — it is information. Characterizing this gap reveals what film music does that cannot yet be formalized.
+**Why it matters:** This is the most intellectually consequential question in the research program. The gap between computational perception and compositional intent is not a failure condition - it is information. Characterizing this gap reveals what film music does that cannot yet be formalized.
 
 **Experimental mapping:** EXP-004 (Composer vs. AI Study)
 
@@ -71,7 +71,7 @@ These questions emerge from the primary program and are being investigated in pa
 
 ### RQ-05 · Narrative Position Inference
 
-**Question:** Can the narrative position of a cue — opening, rising, climax, falling, resolution — be inferred from acoustic features alone?
+**Question:** Can the narrative position of a cue - opening, rising, climax, falling, resolution - be inferred from acoustic features alone?
 
 **Theoretical framing:** Film music is structurally embedded in narrative time. A rising-tension cue and a climax cue may both be annotated as "tension," but their temporal position gives them entirely different dramatic functions. Whether acoustic features encode narrative position is an open question.
 
@@ -79,7 +79,7 @@ These questions emerge from the primary program and are being investigated in pa
 
 ### RQ-06 · Spectral Density as Suspense Proxy
 
-**Question:** Is spectral density a reliable, generalizable predictor of suspense in film music — and does this generalize across compositional styles and historical periods?
+**Question:** Is spectral density a reliable, generalizable predictor of suspense in film music - and does this generalize across compositional styles and historical periods?
 
 **Theoretical framing:** High spectral density (dense harmonic content, complex timbral layering) is a compositional hallmark of suspense scoring. This research tests whether this intuition has quantitative support across a diverse dataset.
 
@@ -87,7 +87,7 @@ These questions emerge from the primary program and are being investigated in pa
 
 ### RQ-07 · Tempo as Arousal Proxy
 
-**Question:** Does tempo function as a simple linear arousal scale in cinematic music, or are the dynamics more complex — with tempo interacting with harmonic mode, dynamic level, and orchestration density?
+**Question:** Does tempo function as a simple linear arousal scale in cinematic music, or are the dynamics more complex - with tempo interacting with harmonic mode, dynamic level, and orchestration density?
 
 **Theoretical framing:** Basic arousal-valence models predict that higher tempo correlates with higher arousal. Film scoring practice suggests this relationship is highly nonlinear and heavily modulated by harmonic context. A slow tempo in a major key produces very different emotional output than a slow tempo in a minor key.
 
@@ -101,7 +101,7 @@ These questions define the long-term theoretical horizon of the lab. They are no
 
 ### RQ-S01 · Cross-Domain Emotional Transfer
 
-**Question:** Can a model trained exclusively on cinematic film scores learn an emotional encoding that transfers to non-cinematic music — concert music, popular music, ambient music?
+**Question:** Can a model trained exclusively on cinematic film scores learn an emotional encoding that transfers to non-cinematic music - concert music, popular music, ambient music?
 
 **Why it matters:** If emotional encoding in cinematic music is unique to the form (shaped by visual context, narrative convention, and genre expectation), transfer should fail. If it reveals universal acoustic-emotional principles, transfer may succeed. Either outcome is theoretically significant.
 
@@ -109,17 +109,17 @@ These questions define the long-term theoretical horizon of the lab. They are no
 
 ### RQ-S02 · Spatial Geometry of Musical Emotion
 
-**Question:** Does musical emotional space have geometric properties analogous to physical architectural space — and can theories of spatial proportion, tension, and release from architecture inform how we model musical emotional trajectory?
+**Question:** Does musical emotional space have geometric properties analogous to physical architectural space - and can theories of spatial proportion, tension, and release from architecture inform how we model musical emotional trajectory?
 
-**Theoretical framing:** This research thread draws from the researcher's background in architectural design. The hypothesis is that spatial concepts — compression, expansion, threshold, threshold crossing, proportion, negative space — map meaningfully onto the structure of cinematic emotional arcs. This is speculative but testable through dimensional analysis of feature space topology.
+**Theoretical framing:** This research thread draws from the researcher's background in architectural design. The hypothesis is that spatial concepts - compression, expansion, threshold, threshold crossing, proportion, negative space - map meaningfully onto the structure of cinematic emotional arcs. This is speculative but testable through dimensional analysis of feature space topology.
 
 ---
 
 ### RQ-S03 · The Computable Grammar of Cinematic Emotion
 
-**Question:** Is there a finite, learnable grammar of cinematic emotional construction — a set of compositional rules with sufficient regularity to be formally specified?
+**Question:** Is there a finite, learnable grammar of cinematic emotional construction - a set of compositional rules with sufficient regularity to be formally specified?
 
-**Theoretical framing:** Linguistics has syntax. Music theory has harmony. Does cinematic emotion have a grammar? This question sits at the intersection of computational creativity, cognitive science, and film theory. The answer — if it exists — would represent a fundamental contribution to understanding how art communicates.
+**Theoretical framing:** Linguistics has syntax. Music theory has harmony. Does cinematic emotion have a grammar? This question sits at the intersection of computational creativity, cognitive science, and film theory. The answer - if it exists - would represent a fundamental contribution to understanding how art communicates.
 
 ---
 
