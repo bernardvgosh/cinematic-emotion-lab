@@ -129,7 +129,7 @@ An interdisciplinary speculative research thread drawing from spatial design the
 
 ## Architecture Pipeline
 
-![Research Pipeline](visualizations/assets/CEL_pipeline_diagram.png)
+![Cinematic Emotion Intelligence Pipeline](visualizations/assets/CEL_pipeline_intelligence.png)
 
 The research pipeline is designed for **staged refinement** — each layer is independently operable while feeding forward into the next. This modularity allows experimental components to be swapped, upgraded, or replaced without collapsing the broader system.
 
@@ -190,6 +190,14 @@ See [docs/RESEARCH_QUESTIONS.md](docs/RESEARCH_QUESTIONS.md) for extended theore
 ## Research Visualizations
 
 *Selected outputs from active experiments. Full visualization suite released with publication.*
+
+<table>
+<tr>
+<td align="center"><img src="visualizations/assets/CEL_pipeline_intelligence.png" width="280"/><br/><sub>Cinematic Emotion Intelligence Pipeline</sub></td>
+<td align="center"><img src="visualizations/assets/CEL_research_architecture.png" width="280"/><br/><sub>Research Architecture</sub></td>
+<td align="center"><img src="visualizations/assets/CEL_emotion_heatmap_analysis.png" width="280"/><br/><sub>Emotion Heatmap · Cinematic Analysis</sub></td>
+</tr>
+</table>
 
 ![Color Palette](visualizations/assets/CEL_color_palette.png)
 
