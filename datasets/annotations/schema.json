@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cinematic-emotion-lab/annotation-schema/v1.0",
+  "title": "Cinematic Emotion Annotation Schema",
+  "description": "Formal specification for composer-annotated ground truth labels in the Cinematic Emotion Lab research corpus. Ground truth is established from compositional intent - what the composer was constructing - not from listener emotional response. This distinction is methodologically deliberate and fully documented in docs/METHODOLOGY.md.",
+  "version": "1.0.0",
+  "released": "2026-08-01",
+  "maintainer": "Bernard G. - Cinematic Emotion Lab",
+  "status": "public - labels withheld pending publication",
+
+  "annotation_protocol": {
+    "annotator": "primary_researcher",
+    "annotator_role": "film_composer",
+    "annotation_target": "compositional_intent",
+    "annotation_target_description": "What emotional state the composer was constructing at time of composition. Not listener emotional response. Not post-hoc interpretation. First-person compositional intent, applied at the moment of annotation with reference to the original compositional record.",
+    "annotation_authority": "The composer is the ground truth. Annotations reflect the technical and expressive decisions made during composition, not any subsequent interpretation.",
+    "inter_annotator_design": "Single-annotator corpus (primary researcher as composer). Inter-annotator consistency methodology documented separately in docs/METHODOLOGY.md Phase 2.",
+    "annotation_tool": "custom_schema_v1.0",
+    "corpus_status": "Full annotation corpus withheld pending publication. Public subset available at datasets/processed/public_subset_features.csv (acoustic features only, labels withheld)."
+  },
+
+  "schema_fields": {
+
+    "clip_id": {
+      "type": "string",
+      "format": "CEL-[YYYY]-[NNNN]",
+      "description": "Unique identifier for each annotated cinematic audio cue. Format: CEL-[year]-[four-digit sequence]. Anonymized in public corpus subset.",
+      "example": "CEL-2026-0001",
+      "public": true
+    },
+
+    "primary_emotion": {
+      "type": "string",
+      "enum": ["tension", "triumph", "grief", "suspense", "joy", "dread", "longing", "ambiguity"],
+      "description": "The dominant emotional category the composer was constructing in this cue. Chosen from eight categories tuned to cinematic narrative function and expected acoustic separability. Overlap cases (tension/suspense, grief/longing) are documented as edge cases, not collapsed.",
+      "annotation_guidance": "Select the single category that best describes the primary emotional construction. If two categories are equally present and unresolvable, select ambiguity and document in composer_notes.",
+      "public": false,
+      "status": "withheld pending publication"
+    },
+
+    "secondary_emotion": {
+      "type": ["string", "null"],
+      "enum": ["tension", "triumph", "grief", "suspense", "joy", "dread", "longing", "ambiguity", null],
+      "description": "A secondary emotional layer present in the cue, subordinate to the primary emotion. Null if no meaningful secondary layer is present. Common secondary pairings (e.g., dread + longing, triumph + tension) are tracked as a corpus-level pattern.",
+      "public": false,
+      "status": "withheld pending publication"
+    },
+
+    "emotional_intensity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Ordinal scale capturing the magnitude of emotional construction in the cue. Calibrated to dramatic weight and compositional density, not raw loudness. A pianissimo grief cue can score 5. A fortissimo action cue can score 2 if the emotional construction is thin.",
+      "scale_definition": {
+        "1": "Minimal emotional construction - sparse, ambient, emotionally uncommitted",
+        "2": "Understated - present but restrained, deliberate low-profile construction",
+        "3": "Moderate - clear emotional direction, standard dramatic weight",
+        "4": "Elevated - high dramatic commitment, emotionally saturated",
+        "5": "Maximal - peak dramatic intensity, full compositional resources engaged"
+      },
+      "public": false,
+      "status": "withheld pending publication"
+    },
+
+    "narrative_position": {
+      "type": "string",
+      "enum": ["opening", "rising", "climax", "falling", "resolution"],
+      "description": "The position of this cue within the larger dramatic arc of the scene or sequence it was composed for. Narrative position is a first-class annotation dimension because the same acoustic features carry different emotional meaning at different points in a dramatic arc.",
+      "annotation_guidance": "Annotate relative to the immediate scene or sequence context, not the full film. A cue that opens a new scene is 'opening' even if it follows a climax in the prior scene.",
+      "research_relevance": "RQ4: Does narrative position leave measurable and predictive traces in the acoustic signal? Expected: yes. Controlling for narrative position is hypothesized to improve classification accuracy in EXP-002.",
+      "public": true,
+      "status": "field structure public - per-clip values withheld pending publication"
+    },
+
+    "harmonic_mode": {
+      "type": "string",
+      "enum": ["major", "minor", "modal", "atonal"],
+      "description": "The tonal/harmonic framework governing the cue. Major and minor refer to diatonic functional harmony. Modal refers to non-diatonic mode usage (Dorian, Phrygian, Lydian, etc.) where modal color is a primary compositional decision. Atonal refers to non-tonal or deliberately non-functional harmonic structures.",
+      "annotation_guidance": "Classify by compositional intent, not by automated key detection. A cue in D minor that uses Phrygian inflection as a primary color choice is annotated 'modal', not 'minor'.",
+      "research_relevance": "RQ6: Is harmonic mode a primary or secondary predictor of emotional category? This field enables direct testing of the mode-emotion correlation hypothesis.",
+      "public": true,
+      "status": "field structure public - per-clip values withheld pending publication"
+    },
+
+    "orchestration_density": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Ordinal scale capturing the textural density of the orchestration. Proxy for the number and layering of active voices, harmonic complexity, and spatial fullness. Does not map directly to loudness or dynamic marking.",
+      "scale_definition": {
+        "1": "Solo or duo - single melodic voice or minimal harmonic support",
+        "2": "Sparse ensemble - 3-6 voices, open texture, significant silence or space",
+        "3": "Medium density - balanced ensemble, moderate harmonic layering",
+        "4": "Dense - full ensemble engaged, complex harmonic layering, minimal silence",
+        "5": "Saturated - maximum voices, full spectral range occupied, textural saturation"
+      },
+      "public": false,
+      "status": "withheld pending publication"
+    },
+
+    "tempo_category": {
+      "type": "string",
+      "enum": ["static", "slow", "moderate", "fast", "variable"],
+      "description": "Qualitative tempo category assigned by the composer. Complements the computed BPM value from the feature extraction pipeline. 'Static' refers to cues with no discernible pulse (e.g., sustained pads, free rubato). 'Variable' refers to cues with significant tempo variation or ritardando.",
+      "public": true,
+      "status": "field structure public - per-clip values withheld pending publication"
+    },
+
+    "narrative_function": {
+      "type": "string",
+      "enum": ["underscore", "stinger", "theme_statement", "counterpoint", "transition", "source_music"],
+      "description": "The dramatic function of the cue within the scene. Captures compositional role beyond emotional content. Underscore: continuous emotional support. Stinger: short punctuation event. Theme statement: introduction or restatement of a named theme. Counterpoint: cue that works against the visual emotional tone. Transition: cue designed primarily for scene or act change. Source_music: diegetic placement.",
+      "public": true,
+      "status": "field structure public - per-clip values withheld pending publication"
+    },
+
+    "composer_notes": {
+      "type": ["string", "null"],
+      "description": "Free-text field for compositional intent detail that does not fit structured fields. Documents edge cases, deliberate subversions of convention, inter-field tensions, or specific technical choices the composer considers emotionally significant. Selected entries from this field are included in the v0.25 public release.",
+      "public": "partial",
+      "status": "selected non-disclosing entries released with v0.25"
+    },
+
+    "annotation_confidence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "Annotator confidence in the primary emotion label. 3: high confidence, clear and stable compositional intent. 2: moderate confidence, some ambiguity or multi-category tension. 1: low confidence, the cue resists clean categorical assignment. Low-confidence annotations are retained in the corpus as theoretically informative edge cases.",
+      "public": false,
+      "status": "withheld pending publication"
+    },
+
+    "edge_case_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "multi_section_shift",
+          "rubato_tempo",
+          "deliberate_ambiguity",
+          "mode_mixture",
+          "dynamic_extreme",
+          "unconventional_instrumentation",
+          "intentional_expectation_violation",
+          "dual_emotion_parity"
+        ]
+      },
+      "description": "Structured flags for annotation edge cases. Applied when the cue exhibits structural properties that challenge standard categorical assignment. Edge-case-flagged entries receive additional annotation scrutiny and are analyzed separately in EXP-004.",
+      "public": "field structure only",
+      "status": "flag taxonomy public - per-clip assignments withheld pending publication"
+    }
+
+  },
+
+  "corpus_metadata": {
+    "total_cues_annotated": "withheld",
+    "public_subset_size": "available at datasets/processed/public_subset_features.csv",
+    "annotation_date_range": "2026",
+    "audio_format": "22050Hz, mono, float32 (features only - raw audio withheld)",
+    "feature_vector_dimensions": 71,
+    "feature_vector_specification": "See docs/METHODOLOGY.md Section 7 and NB-EXP-001",
+    "corpus_composition_notes": "Original compositions by Bernard G. Raw audio not committed to repository for IP protection."
+  },
+
+  "release_history": {
+    "v1.0": {
+      "date": "2026-08-01",
+      "status": "schema structure public",
+      "released": ["schema_fields structure", "field definitions", "annotation_protocol description", "edge_case_flags taxonomy"],
+      "withheld": ["per-clip label values", "corpus size", "full corpus statistics"]
+    }
+  },
+
+  "citations": {
+    "cite_as": "Bernard G. (2026). Cinematic Emotion Annotation Schema v1.0. Cinematic Emotion Lab. https://github.com/bernardvgosh/cinematic-emotion-lab",
+    "related_work": "See docs/RESEARCH_QUESTIONS.md and docs/METHODOLOGY.md"
+  }
+}
