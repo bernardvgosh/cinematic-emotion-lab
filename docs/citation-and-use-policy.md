@@ -32,9 +32,11 @@ tools (Zotero, Mendeley, etc.) can import CITATION.cff directly.
 **APA**
 Bernard G. (2026). *Cinematic Emotion Lab* [Software and research documentation].
 GitHub. https://github.com/bernardvgosh/cinematic-emotion-lab
+OSF: https://osf.io/wa2q8. https://doi.org/10.17605/OSF.IO/EU89S
 
 **MLA**
 G., Bernard. *Cinematic Emotion Lab*. 2026, github.com/bernardvgosh/cinematic-emotion-lab.
+OSF registration: https://doi.org/10.17605/OSF.IO/EU89S.
 
 **BibTeX**
 ```bibtex
@@ -44,15 +46,18 @@ G., Bernard. *Cinematic Emotion Lab*. 2026, github.com/bernardvgosh/cinematic-em
   year         = {2026},
   publisher    = {GitHub},
   url          = {https://github.com/bernardvgosh/cinematic-emotion-lab},
+  doi          = {10.17605/OSF.IO/EU89S},
   note         = {Interdisciplinary AI research program: cinematic emotion
                   recognition, harmonic tension modeling, and computational
-                  analysis of composer-machine interpretive divergence}
+                  analysis of composer-machine interpretive divergence.
+                  OSF project: https://osf.io/wa2q8}
 }
 ```
 
 **Chicago**
 G., Bernard. "Cinematic Emotion Lab." 2026. GitHub.
 https://github.com/bernardvgosh/cinematic-emotion-lab.
+https://doi.org/10.17605/OSF.IO/EU89S.
 
 ### Citing the Annotation Schema Specifically
 

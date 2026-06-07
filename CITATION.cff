@@ -37,8 +37,8 @@ identifiers:
     value: "https://osf.io/wa2q8"
     description: "OSF project page - Cinematic Emotion Lab"
   - type: doi
-    value: "TBD - OSF registration pending approval (submitted 2026-06-07)"
-    description: "OSF registration DOI - update when approved at osf.io/wa2q8 > Registrations"
+    value: "10.17605/OSF.IO/EU89S"
+    description: "OSF registration DOI - Cinematic Emotion Lab (embargoed pending publication)"
 
 version: "0.2.0"
 
