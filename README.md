@@ -254,6 +254,8 @@ A machine-readable citation is available in [CITATION.cff](CITATION.cff). Format
 **Short-form attribution:**
 > Cinematic Emotion Lab - Bernard G. (2026) · https://github.com/bernardvgosh/cinematic-emotion-lab
 
+**OSF project:** https://osf.io/wa2q8
+
 When the formal publication associated with this research is released, please update your citation to reference the peer-reviewed paper. A repository notice will be committed at that time.
 
 ---
